@@ -40,12 +40,20 @@
         <ul class="contacts list">
           <li class="item">
             <a href="mailto:info@devstudio.com" class="button primary link"
-              >info@devstudio.com</a
+              >
+              <svg class="button-icon-envelope">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="item">
             <a href="tel:+380961111111" class="button primary link"
-              >+38 096 111 11 11</a
+              >
+              <svg class="button-icon-smartphone">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -55,11 +63,13 @@
     <main>
       <!--Герой-->
       <section class="hero">
+        <div class="overlay">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button secondary pointer">
             Замовити послугу
           </button>
+        </div>
         </div>
       </section>
 
@@ -71,26 +81,49 @@
           </h2>
           <ul class="feature list">
             <li>
+              <div class="thumb">
+                <svg class="feature-icon">
+                  <use href="./images/symbol-defs.svg#icon-antenna"></use>
+                </svg>
+              </div>
               <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
               <p class="feature-text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
+
             <li>
+              <div class="thumb">
+              <svg class="feature-icon">
+                <use href="./images/symbol-defs.svg#icon-clock"></use>
+              </svg>
+            </div>
               <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
               <p class="feature-text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
+
             <li>
+              <div class="thumb">
+                <svg class="feature-icon">
+                  <use href="./images/symbol-defs.svg#icon-diagram"></use>
+                </svg>
+              </div>
               <h3 class="title">ПЛАНУВАННЯ</h3>
               <p class="feature-text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
+
             <li>
+              <div class="thumb">
+                <svg class="feature-icon">
+                  <use href="./images/symbol-defs.svg#icon-astronaut"></use>
+                </svg>
+              </div>
               <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
               <p class="feature-text">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -151,7 +184,13 @@
                 <h3 class="team-title">Ігор Дем'яненко</h3>
                 <p lang="en" class="team-text">Product Designer</p>
               </div>
+               <div class="team-thumb">
+                <svg class="team-soc-icon">
+                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+               </div>
             </li>
+
             <li class="item">
               <img
                 class="card"
@@ -165,6 +204,7 @@
                 <p lang="en" class="team-text">Frontend Developer</p>
               </div>
             </li>
+
             <li class="item">
               <img
                 class="card"
@@ -178,6 +218,7 @@
                 <p lang="en" class="team-text">Marketing</p>
               </div>
             </li>
+
             <li class="item">
               <img
                 class="card"
