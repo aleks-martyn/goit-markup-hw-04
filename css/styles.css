@@ -269,12 +269,18 @@ background-position: center;}
   line-height: 1.19;
 }
 .team-text {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
 }
 
 .team-soc-icon {width: 20px;
 height: 20px;}
+
+.team-soc.list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;}
 
 /*---buttons---*/
 .contacts .button {min-width: 142px;
@@ -317,6 +323,17 @@ height: 20px;}
   cursor: pointer;
 }
 
+/*---clients---*/
+.clients.list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;}
+
+.client-icon {
+width: 106px;
+height: 60px;
+}
+
 /*---footer---*/
 .address .item:not(:first-child) {
   margin-top: 9px;
@@ -346,6 +363,24 @@ height: 20px;}
 .address .address-link {
   color: var(--white-color);
 }
+
+.footer-container {display: flex;
+gap: 70px;
+align-items: baseline;}
+
+.footer-soc.list {display: flex;
+gap: 10px;}
+
+.footer-soc-icon {width: 20px;
+height: 20px;}
+
+.footer-subtitle {
+margin-bottom: 20px;
+color: var(--white-color);
+font-family: Roboto;
+font-size: 14px;
+line-height: 1.17;
+text-transform: uppercase;}
 
 /*--------------Portfolio-----------------*/
 
