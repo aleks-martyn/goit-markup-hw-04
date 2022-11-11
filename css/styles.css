@@ -6,6 +6,9 @@
 /*---Первинний колір фону #FFFFFF---*/
 /*---Вторинний колір фону #2F303A---*/
 /*---Попелястий колір фону #F5F4FA---*/
+/*---Колір посилань на соц. мережі #AFB1B8---*/
+/*---Колір рамки у хедері #ECECEC---*/
+/*---Колір рамки у картках #EEEEEE---*/
 
 :root {
   --primary-text-color: #757575;
@@ -18,6 +21,8 @@
   --header-border-color: #ececec;
   --cards-border-color: #eeeeee;
   --button-active-color: #188ce8;
+  --social-links-color: #AFB1B8;
+  --background-footer-icon-color: rgba(255, 255, 255, 0.1);
 }
 
 h1,
@@ -201,7 +206,8 @@ background-position: center;}
 
 /*---features---*/
 
-.thumb {
+.feature-thumb {display: flex;
+  justify-content: center;
   background-color: var(--ashen-background-color);
   margin-bottom: 30px;
   padding-top: 25px;
@@ -273,14 +279,36 @@ background-position: center;}
   font-size: 16px;
   line-height: 1.19;
 }
+.thumb {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0;
+border: 0;
+width: 44px;
+height: 44px;
+border-radius: 50%;
+cursor: pointer;}
 
-.team-soc-icon {width: 20px;
-height: 20px;}
+.team-thumb {
+color: var(--social-links-color);
+background-color: var(--white-color);
+}
+
+.team-thumb:hover,
+.team-thumb:focus
+{background-color: var(--accent-color);
+color: var(--white-color);}
+
+.icon {
+width: 20px;
+height: 20px;
+fill: currentColor;}
 
 .team-soc.list {
-  display: flex;
-  gap: 10px;
-  justify-content: center;}
+display: flex;
+gap: 10px;
+justify-content: center;}
 
 /*---buttons---*/
 .contacts .button {min-width: 142px;
@@ -325,13 +353,31 @@ height: 20px;}
 
 /*---clients---*/
 .clients.list {
+display: flex;
+gap: 30px;
+justify-content: center;}
+
+.client-thumb {
   display: flex;
-  gap: 30px;
-  justify-content: center;}
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  color: var(--social-links-color);
+  border: 1px solid;
+  border-color: var(--social-links-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.client-thumb:hover,
+.client-thumb:focus {color: var(--accent-color);
+border-color: var(--accent-color);}
 
 .client-icon {
 width: 106px;
 height: 60px;
+fill: currentColor;
 }
 
 /*---footer---*/
@@ -371,8 +417,15 @@ align-items: baseline;}
 .footer-soc.list {display: flex;
 gap: 10px;}
 
-.footer-soc-icon {width: 20px;
-height: 20px;}
+.footer-thumb {
+color: var(--white-color);
+background-color: var(--background-footer-icon-color);
+}
+
+.footer-thumb:hover,
+.footer-thumb:focus {
+  background-color: var(--accent-color);
+}
 
 .footer-subtitle {
 margin-bottom: 20px;
