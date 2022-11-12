@@ -47,6 +47,10 @@ img {
   height: auto;
 }
 
+.icon {
+  fill: currentColor;
+}
+
 /*---logo header---*/
 .logo {
   display: block;
@@ -140,15 +144,8 @@ img {
   padding-bottom: 32px;
 }
 
-.button-icon-envelope {margin-right: 10px;
-  width: 16px;
-  height: 12px;
-  fill: currentColor;}
+.button-icon {margin-right: 10px;}
 
-.button-icon-smartphone {margin-right: 10px;
-  width: 10px;
-  height: 16px;
-  fill: currentColor;}
 
 /*---hero---*/
 .hero-title {
@@ -214,11 +211,6 @@ img {
   padding-bottom: 25px;
   }
 
-.feature-icon {
-  width: 70px;
-  height: 70px;
-  }
-
 .feature.list {
   display: flex;
   gap: 30px;
@@ -253,6 +245,7 @@ img {
 }
 
 .team .item {
+  flex-basis: calc((100%-90px)/4);
   border-right: 1px solid var(--header-border-color);
   border-bottom: 1px solid var(--header-border-color);
   border-left: 1px solid var(--header-border-color);
@@ -304,10 +297,6 @@ background-color: var(--white-color);
 {background-color: var(--accent-color);
 color: var(--white-color);}
 
-.icon {
-width: 20px;
-height: 20px;
-fill: currentColor;}
 
 .team-soc.list {
 display: flex;
@@ -379,9 +368,6 @@ justify-content: center;}
 .client-thumb:focus {color: var(--accent-color);
 border-color: var(--accent-color);}
 
-.client-icon {
-fill: currentColor;
-}
 
 /*---footer---*/
 .address .item:not(:first-child) {
@@ -493,16 +479,17 @@ text-transform: uppercase;}
   border-left: 1px solid var(--cards-border-color);
 }
 
-.portfolio-item:hover,
-.portfolio-item:focus {
+.portfolio-link {
+  display: block;
+  text-decoration: none;
+}
+
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow:
     0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-
-.portfolio-link {
-  text-decoration: none;
 }
 
 .portfolio-subtitle {
