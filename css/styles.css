@@ -52,6 +52,7 @@ img {
 }
 
 /*---logo header---*/
+
 .logo {
   display: block;
   font-family: Raleway, sans-serif;
@@ -60,16 +61,20 @@ img {
   line-height: 1.19;
   text-decoration: none;
 }
+
 .logo-header {
   color: var(--title-text-color);
 }
+
 .logo-header:hover,
 .logo-header:focus {
   color: var(--accent-color);
 }
+
 .logo-link {
   color: var(--accent-color);
 }
+
 .list {
   padding: 0;
   margin: 0;
@@ -97,14 +102,17 @@ img {
   display: flex;
   align-items: center;
 }
+
 .logo-header + .site-nav {
   margin-left: 93px;
 }
 
 /*---site nav---*/
+
 .site-nav {
   display: flex;
 }
+
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
@@ -131,6 +139,7 @@ img {
 }
 
 /*---contacts---*/
+
 .contacts {
   margin-left: auto;
   display: flex;
@@ -140,6 +149,7 @@ img {
 .contacts .item + .item {
   margin-left: 30px;
 }
+
 .contacts .link {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -150,6 +160,7 @@ img {
 }
 
 /*---hero---*/
+
 .hero-title {
   margin-left: auto;
   margin-right: auto;
@@ -162,6 +173,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
 .hero {
   max-width: 1600px;
   height: 600px;
@@ -177,6 +189,7 @@ img {
 }
 
 /*---section---*/
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -193,6 +206,7 @@ img {
   line-height: 1.17;
   text-align: center;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -228,6 +242,7 @@ img {
   font-size: 14px;
   line-height: 1.14;
 }
+
 .feature-text {
   max-width: 270px;
   font-size: 14px;
@@ -235,12 +250,14 @@ img {
 }
 
 /*---works---*/
+
 .works-list {
   display: flex;
   gap: 30px;
 }
 
 /*---team---*/
+
 .team.list {
   display: flex;
   gap: 30px;
@@ -275,11 +292,13 @@ img {
   font-size: 16px;
   line-height: 1.19;
 }
+
 .team-text {
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
 }
+
 .thumb {
   display: flex;
   align-items: center;
@@ -310,6 +329,7 @@ img {
 }
 
 /*---buttons---*/
+
 .contacts .button {
   min-width: 142px;
   font-weight: 500;
@@ -317,6 +337,7 @@ img {
   letter-spacing: 0.02em;
   text-align: center;
 }
+
 .button.primary {
   display: flex;
   color: var(--primary-text-color);
@@ -324,6 +345,7 @@ img {
   text-decoration: none;
   align-items: center;
 }
+
 .button.primary:hover,
 .button.primary:focus {
   color: var(--accent-color);
@@ -344,15 +366,18 @@ img {
   line-height: 1.88;
   letter-spacing: 0.06em;
 }
+
 .button.secondary:hover,
 .button.secondary:focus {
   background-color: var(--button-active-color);
 }
+
 .pointer {
   cursor: pointer;
 }
 
 /*---clients---*/
+
 .clients.list {
   display: flex;
   gap: 30px;
@@ -379,6 +404,7 @@ img {
 }
 
 /*---footer---*/
+
 .address .item:not(:first-child) {
   margin-top: 9px;
 }
@@ -386,24 +412,29 @@ img {
 .address {
   font-style: normal;
 }
+
 .address-link {
   font-weight: 400;
   line-height: 1.71;
 }
+
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--secondary-background-color);
 }
+
 .logo-footer {
   margin-bottom: 20px;
   color: var(--white-color);
 }
+
 .address .link {
   color: var(--secondary-text-color);
   font-weight: 400;
   line-height: 1.71;
 }
+
 .address .address-link {
   color: var(--white-color);
 }
@@ -445,6 +476,7 @@ img {
 }
 
 /*---filter---*/
+
 .portfolio-filter {
   display: flex;
   margin-bottom: 50px;
