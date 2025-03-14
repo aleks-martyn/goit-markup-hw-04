@@ -1,35 +1,38 @@
-/*---Колір основного тексту #757575---*/
-/*---Колір тексту заголовків #212121---*/
-/*---Вторинний колір тексту rgba(255, 255, 255, 0.6)---*/
-/*---Black color logo #000000---*/
-/*---Accent color #2196F3---*/
-/*---Первинний колір фону #FFFFFF---*/
-/*---Вторинний колір фону #2F303A---*/
-/*---Попелястий колір фону #F5F4FA---*/
-/*---Колір посилань на соц. мережі #AFB1B8---*/
-/*---Колір рамки у хедері #ECECEC---*/
-/*---Колір рамки у картках #EEEEEE---*/
+/* ---Основний колір тексту #757575--- */
+/* ---Вторинний колір тексту rgba(255, 255, 255, 0.6)--- */
+/* ---Колір тексту заголовків #212121--- */
+/* ---Акцентний колір #2196F3--- */
+/* ---Первинний колір фону #FFFFFF--- */
+/* ---Вторинний колір фону #2F303A--- */
+/* ---Додатковий колір фону #F5F4FA--- */
+/* ---Колір межі хедеру і картки члена команди #ececec--- */
+/* ---Колір межі картки портфоліо #eeeeee--- */
+/* ---Колір фону активної кнопки #188ce8--- */
+/* ---Колір посилань на соц. мережі #AFB1B8--- */
+/* ---Колір фону посилань на соц. мережі в футері rgba(255, 255, 255, 0.1)--- */
+/* ---Колір градієнту в секції hero rgba(47, 48, 58, 0.4)--- */
 
 :root {
   --primary-text-color: #757575;
+  --secondary-text-color: rgb(255 255 255 / 0.6);
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --white-color: #ffffff;
-  --secondary-background-color: #2f303a;
-  --secondary-text-color: rgba(255, 255, 255, 0.6);
-  --ashen-background-color: #f5f4fa;
-  --header-border-color: #ececec;
-  --cards-border-color: #eeeeee;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #2f303a;
+  --additional-bg-color: #f5f4fa;
+  --primary-border-color: #ececec;
+  --secondary-border-color: #eeeeee;
   --button-active-color: #188ce8;
-  --social-links-color: #afb1b8;
-  --background-footer-icon-color: rgba(255, 255, 255, 0.1);
+  --social-link-color: #afb1b8;
+  --bg-footer-icon-color: rgb(255 255 255 / 0.1);
+  --hero-grad-color: rgb(47 48 58 / 0.4);
 }
 
 body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  background-color: var(--white-color);
+  background-color: var(--primary-bg-color);
 }
 
 h1,
@@ -70,7 +73,7 @@ ul {
 /* ---header--- */
 
 .page-header {
-  border-bottom: 1px solid var(--header-border-color);
+  border-bottom: 1px solid var(--primary-border-color);
 }
 
 .header-container {
@@ -159,7 +162,7 @@ ul {
   margin-right: auto;
   margin-bottom: 30px;
   max-width: 696px;
-  color: var(--white-color);
+  color: var(--primary-bg-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -173,11 +176,11 @@ ul {
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
+      var(--hero-grad-color),
+      var(--hero-grad-color)
     ),
     url(../images/bg-img-hero.jpg);
-  background-color: var(--secondary-background-color);
+  background-color: var(--secondary-bg-color);
   text-align: center;
 }
 
@@ -217,7 +220,6 @@ ul {
   padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
-  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -226,7 +228,7 @@ ul {
 .feature-thumb {
   display: flex;
   justify-content: center;
-  background-color: var(--ashen-background-color);
+  background-color: var(--additional-bg-color);
   margin-bottom: 30px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -265,25 +267,25 @@ ul {
 }
 
 .team-section {
-  background-color: var(--ashen-background-color);
+  background-color: var(--additional-bg-color);
 }
 
 .team .item {
   flex-basis: calc((100%-90px) / 4);
-  border-right: 1px solid var(--header-border-color);
-  border-bottom: 1px solid var(--header-border-color);
-  border-left: 1px solid var(--header-border-color);
+  border-right: 1px solid var(--primary-border-color);
+  border-bottom: 1px solid var(--primary-border-color);
+  border-left: 1px solid var(--primary-border-color);
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgb(0 0 0 / 0.12), 0px 1px 1px rgb(0 0 0 / 0.14),
+    0px 2px 1px rgb(0 0 0 / 0.2);
 }
 
 .title-text {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
-  background-color: var(--white-color);
+  background-color: var(--primary-bg-color);
 }
 
 .team-title {
@@ -313,14 +315,14 @@ ul {
 }
 
 .team-thumb {
-  color: var(--social-links-color);
-  background-color: var(--white-color);
+  color: var(--social-link-color);
+  background-color: var(--primary-bg-color);
 }
 
 .team-thumb:hover,
 .team-thumb:focus {
   background-color: var(--accent-color);
-  color: var(--white-color);
+  color: var(--primary-bg-color);
 }
 
 .team-soc.list {
@@ -359,7 +361,7 @@ ul {
   border: 0;
   border-radius: 4px;
   text-align: center;
-  color: var(--white-color);
+  color: var(--primary-bg-color);
   background-color: var(--accent-color);
   font-family: inherit;
   font-weight: 700;
@@ -391,9 +393,9 @@ ul {
   align-items: center;
   width: 170px;
   height: 92px;
-  color: var(--social-links-color);
+  color: var(--social-link-color);
   border: 1px solid;
-  border-color: var(--social-links-color);
+  border-color: var(--social-link-color);
   border-radius: 4px;
   cursor: pointer;
 }
@@ -422,13 +424,13 @@ ul {
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--secondary-background-color);
+  background-color: var(--secondary-bg-color);
 }
 
 .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
-  color: var(--white-color);
+  color: var(--primary-bg-color);
 }
 
 .address .link {
@@ -438,7 +440,7 @@ ul {
 }
 
 .address .address-link {
-  color: var(--white-color);
+  color: var(--primary-bg-color);
 }
 
 .footer-container {
@@ -453,8 +455,8 @@ ul {
 }
 
 .footer-thumb {
-  color: var(--white-color);
-  background-color: var(--background-footer-icon-color);
+  color: var(--primary-bg-color);
+  background-color: var(--bg-footer-icon-color);
 }
 
 .footer-thumb:hover,
@@ -464,7 +466,7 @@ ul {
 
 .footer-slogan {
   margin-bottom: 20px;
-  color: var(--white-color);
+  color: var(--primary-bg-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
@@ -499,15 +501,15 @@ ul {
   line-height: 1.63;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  background-color: var(--ashen-background-color);
+  background-color: var(--additional-bg-color);
 }
 
 .portfolio-filter .button:hover,
 .portfolio-filter .button:focus {
-  color: var(--white-color);
+  color: var(--primary-bg-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 0.1), 0px 1px 2px rgb(0 0 0 / 0.08),
+    0px 2px 2px rgb(0 0 0 / 0.12);
 }
 
 /* ---portfolio-list--- */
@@ -520,9 +522,9 @@ ul {
 
 .portfolio-title-text {
   padding: 20px 24px;
-  border-right: 1px solid var(--cards-border-color);
-  border-bottom: 1px solid var(--cards-border-color);
-  border-left: 1px solid var(--cards-border-color);
+  border-right: 1px solid var(--secondary-border-color);
+  border-bottom: 1px solid var(--secondary-border-color);
+  border-left: 1px solid var(--secondary-border-color);
 }
 
 .portfolio-link {
@@ -532,8 +534,8 @@ ul {
 
 .portfolio-link:hover,
 .portfolio-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgb(0 0 0 / 0.12), 0px 4px 4px rgb(0 0 0 / 0.06),
+    1px 4px 6px rgb(0 0 0 / 0.16);
 }
 
 .portfolio-subtitle {
