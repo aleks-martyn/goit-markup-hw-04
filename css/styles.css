@@ -279,14 +279,41 @@ ul {
   flex-basis: calc((100% - 3 * 30px) / 4);
 }
 
-.feature-thumb {
+.feature-item::before {
+  display: block;
+  margin-bottom: 30px;
+  height: 120px;
+  content: '';
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--additional-bg-color);
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+
+/* .feature-thumb {
   display: flex;
   justify-content: center;
   margin-bottom: 30px;
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: var(--additional-bg-color);
-}
+} */
 
 .feature-subtitle {
   margin-bottom: 10px;
