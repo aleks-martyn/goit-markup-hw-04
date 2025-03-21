@@ -306,15 +306,6 @@ ul {
   background-image: url(../images/astronaut.svg);
 }
 
-/* .feature-thumb {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  background-color: var(--additional-bg-color);
-} */
-
 .feature-subtitle {
   margin-bottom: 10px;
   font-size: 14px;
@@ -396,19 +387,22 @@ ul {
 }
 
 .client-item {
+  flex-basis: calc((100% - 5 * 30px) / 6);
+}
+
+.client-link {
   display: flex;
   justify-content: center;
   padding-top: 15px;
   padding-bottom: 15px;
-  flex-basis: calc((100% - 5 * 30px) / 6);
   color: var(--social-link-color);
   border: 1px solid var(--social-link-color);
   border-radius: 4px;
   cursor: pointer;
 }
 
-.client-item:hover,
-.client-item:focus {
+.client-link:hover,
+.client-link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
