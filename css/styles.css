@@ -59,6 +59,10 @@ a {
   text-decoration: none;
 }
 
+address {
+  font-style: normal;
+}
+
 button {
   font-size: 16px;
   cursor: pointer;
@@ -433,10 +437,6 @@ ul {
 }
 
 /* ---address--- */
-
-.address {
-  font-style: normal;
-}
 
 .address-list > .item:not(:last-child) {
   margin-bottom: 9px;
