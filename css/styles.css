@@ -397,8 +397,8 @@ ul {
 .client-link {
   display: flex;
   justify-content: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  align-items: center;
+  height: 92px;
   color: var(--social-link-color);
   border: 1px solid var(--social-link-color);
   border-radius: 4px;
