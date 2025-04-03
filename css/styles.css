@@ -30,7 +30,7 @@
   --secondary-border-color: #eee;
   --button-active-color: #188ce8;
   --social-link-color: #afb1b8;
-  --bg-footer-icon-color: rgb(255 255 255 / 0.1);
+  --footer-icon-bg-color: rgb(255 255 255 / 0.1);
   --hero-grad-color: rgb(47 48 58 / 0.4);
   --team-item-shadow: 0px 1px 3px rgb(0 0 0 / 0.12),
     0px 1px 1px rgb(0 0 0 / 0.14), 0px 2px 1px rgb(0 0 0 / 0.2);
@@ -128,6 +128,8 @@ ul {
 
 .header-logo {
   display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--title-text-color);
 }
 
@@ -184,7 +186,7 @@ ul {
 
 /* ---hero--- */
 
-.overlay {
+.hero-overlay {
   margin-left: auto;
   margin-right: auto;
   padding-top: 200px;
@@ -478,7 +480,7 @@ ul {
 
 .footer-thumb {
   color: var(--primary-bg-color);
-  background-color: var(--bg-footer-icon-color);
+  background-color: var(--footer-icon-bg-color);
 }
 
 .footer-thumb:hover,
